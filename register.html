@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>注册</title>
+    </head>
+    <body>
+        <header>
+            <img src="assets/images/banner.jpg" width="100%" height="500px" alt="banner"/>
+            <p align="right"><a href="index.html">返回首页</a></p>
+        </header>
+        <main>
+            <form action="#" method="post" align="center">
+                <p>账号：<input type="text" placeholder="请输入以字符数字字母不超过8位的昵称" name="id" size="35"/> </p>
+                <p>密码：<input type="password" placeholder="请输入密码" name="password" /> </p>
+                <p>确认密码：<input type="password" placeholder="请确认密码" name="confirm_password" /> </p>
+                <p>邮箱：<input type="email" placeholder="请输入邮箱" name="email" /> </p>
+                <p>手机：<input type="tel" placeholder="请输入手机号" name="tel" /> </p>
+                <p>性别：
+                    <input type="radio" name="gender" value="male" />男
+                    <input type="radio" name="gender" value="female" />女
+                </p> 
+                <p>出生年月：<input type="date" name="birth" /> </p>  
+                <p>诗词偏好：
+                    <input type="checkbox" name="like" value="tangshi" />唐诗
+                    <input type="checkbox" name="like" value="songci" />宋词
+                    <input type="checkbox" name="like" value="yuanqu" />元曲
+                    <input type="checkbox" name="like" value="xiaoshuo" />明清小说
+                    <input type="checkbox" name="like" value="xiandaishi" />现代诗
+                    <input type="checkbox" name="like" value="qita" />其他
+                </p>
+                <p>学龄段：
+                    <select name="degree">
+                        <option value="primary">中小学</option>
+                        <option value="junior" selected="selected">大学</option>
+                        <option value="senior">已毕业</option>
+                    </select>
+                </p>
+                <p>上传头像：
+                    <input type="file" />
+                </p>
+                <button type="submit"><h3>注册</h3></button>
+                <!-- 等同于 <input type="submit" value="注册" /> -->
+                <p><input type="button" value="重置" /></p>
+            </form>        
+        </main>
+    </body>
+</html>
